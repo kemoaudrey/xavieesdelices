@@ -6,13 +6,13 @@ const menuItems = [
   { id: 1, name: 'Crepes nature', price: 100, category: 'Crepes', image: 'assets/crepesnature.jpg'},
   { id: 2, name: 'Crepes Gourmandes', price: 500, category: 'Crepes', image: 'assets/crepesgourmandes.jpg' },
   { id: 3, name: 'Crepes chocolat', price: 150, category: 'Crepes', image: 'assets/crepeschocolat.jpg' },
-  { id: 4, name: 'Crepes Saucisson Fromage', price: 150, category: 'Crepes', image: 'assets/crepessaucissonfromage.jpg' },
+  { id: 4, name: 'Crepes Saucisson Fromage', price: 500, category: 'Crepes', image: 'assets/crepessaucissonfromage.jpg' },
   { id: 5, name: 'Crepes Viande Hachée', price: 500, category: 'Crepes', image: 'assets/Crepesfarciesalaviandehachée.jpg' },
-  { id: 6, name: 'Crepes Viande Hachée Fromage', price: 500, category: 'Crepes', image: 'assets/crepesviandehachefromages.jpg' },
+  { id: 6, name: 'Crepes Viande Hachée Fromage', price: 1000, category: 'Crepes', image: 'assets/crepesviandehachefromages.jpg' },
   { id: 7, name: 'Gaufres Nature', price: 150, category: 'Gaufres', image: 'assets/gaufrenature.jpg' },
   { id: 8, name: 'Gaufres chocolat', price: 400, category: 'Gaufres', image: 'assets/close-up-waffles-with-chocolate-raspberries.jpg' },
   { id: 9, name: 'Gaufres Saucisson', price: 500, category: 'Gaufres', image: 'assets/gaufresaucisson.jpg' },
-  { id: 10, name: 'Gaufres Saucisson Fromage', price: 500, category: 'Gaufres', image: 'assets/gaufresaucissonfromages.jpg' },
+  { id: 10, name: 'Gaufres Saucisson Fromage', price: 700, category: 'Gaufres', image: 'assets/gaufresaucissonfromages.jpg' },
 ];
 
 function HomePage() {
