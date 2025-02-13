@@ -4,14 +4,17 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import QRCodeGenerator from './components/Qr Flyer Generator';
+import QRCodeGenerate from './components/QRcodeGenerator';
+import HomePage from './components/HomePage';
 
 const AppContent = () => {
 
   return (
     <>
       <Routes>
-          <Route exact path="/" element={<QRCodeGenerator />} />
-          
+      <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/flyer" element={<QRCodeGenerator />} />
+          <Route exact path="/QRcode" element={<QRCodeGenerate />} />
       </Routes>
 
       </>
