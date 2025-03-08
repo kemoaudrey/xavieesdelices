@@ -122,7 +122,7 @@ const menuItems = [
   {
     id: 15,
     name: "Flan nature",
-    price: 200,
+    price: 500,
     category: "Flan",
     image: "assets/flan nature.jpg",
     available: false,
