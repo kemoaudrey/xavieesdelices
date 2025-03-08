@@ -377,7 +377,7 @@ function HomePage() {
                   src={item.image || "/placeholder.svg"}
                   alt={item.name}
                   className="menu-item-image"
-                  loading="lazy" // Lazy loading for better performance
+                  // loading="lazy" // Lazy loading for better performance
                 />
                 <h3>{item.name}</h3>
                 <p className="price">{item.price}F</p>

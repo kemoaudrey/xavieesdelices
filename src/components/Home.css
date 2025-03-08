@@ -145,17 +145,11 @@ body {
 
 .category-filters {
   display: flex;
-  justify-content: flex-start; /* Align buttons to the left */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow buttons to wrap into multiple rows */
+  gap: 0.5rem; /* Reduce gap for smaller screens */
   margin-bottom: 2rem;
-  padding: 0 1rem;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: none; /* Hide scrollbar for a cleaner look */
-  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
-}
-.category-filters::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome/Safari */
+  padding: 0 1rem; /* Add padding to prevent buttons from touching the edges */
 }
 
 
@@ -166,9 +160,8 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  flex-shrink: 0; /* Prevent buttons from shrinking */
+  font-size: 0.9rem; /* Reduce font size for smaller screens */
+  white-space: nowrap; /* Prevent text from wrapping inside buttons */
 }
 
 .category-filters button:hover {
@@ -251,10 +244,10 @@ body {
   margin-bottom: 1rem;
   background-color: #f5f5f5;
 }
-.menu-item-image.loading {
+/* .menu-item-image.loading {
   background-color: #f0f0f0;
   animation: pulse 1.5s infinite;
-}
+} */
 
 @keyframes pulse {
   0% { opacity: 0.5; }
@@ -536,7 +529,7 @@ button:focus, input:focus, a:focus {
   }
 
   .cart-button {
-    position: fixed;
+    /* position: fixed; */
     bottom: 1rem;
     right: 1rem;
     background-color: var(--primary-color);
