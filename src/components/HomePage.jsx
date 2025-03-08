@@ -318,75 +318,87 @@ function HomePage() {
             />
           </div>
           <div className="category-filters">
-  <button
-    className={selectedCategory === 'all' ? 'active' : ''}
-    onClick={() => setSelectedCategory('all')}
-  >
-    Tous
-  </button>
-  <button
-    className={selectedCategory === 'Crepes' ? 'active' : ''}
-    onClick={() => setSelectedCategory('Crepes')}
-  >
-    Crêpes
-  </button>
-  <button
-    className={selectedCategory === 'Gaufres' ? 'active' : ''}
-    onClick={() => setSelectedCategory('Gaufres')}
-  >
-    Gaufres
-  </button>
-  <button
-    className={selectedCategory === 'Nems/Pastel/Samoussa' ? 'active' : ''}
-    onClick={() => setSelectedCategory('Nems/Pastel/Samoussa')}
-  >
-    Nems/Pastel/Samoussa
-  </button>
-  <button
-    className={selectedCategory === 'Flan' ? 'active' : ''}
-    onClick={() => setSelectedCategory('Flan')}
-  >
-    Flan
-  </button>
-  <button
-    className={selectedCategory === 'Accompagnement' ? 'active' : ''}
-    onClick={() => setSelectedCategory('Accompagnement')}
-  >
-    Accompagnement
-  </button>
-  <button
+            <button
+              className={selectedCategory === "all" ? "active" : ""}
+              onClick={() => setSelectedCategory("all")}
+            >
+              Tous
+            </button>
+            <button
+              className={selectedCategory === "Crepes" ? "active" : ""}
+              onClick={() => setSelectedCategory("Crepes")}
+            >
+              Crêpes
+            </button>
+            <button
+              className={selectedCategory === "Gaufres" ? "active" : ""}
+              onClick={() => setSelectedCategory("Gaufres")}
+            >
+              Gaufres
+            </button>
+            <button
+              className={
+                selectedCategory === "Nems/Pastel/Samoussa" ? "active" : ""
+              }
+              onClick={() => setSelectedCategory("Nems/Pastel/Samoussa")}
+            >
+              Nems/Pastel/Samoussa
+            </button>
+            <button
+              className={selectedCategory === "Flan" ? "active" : ""}
+              onClick={() => setSelectedCategory("Flan")}
+            >
+              Flan
+            </button>
+            <button
+              className={selectedCategory === "Accompagnement" ? "active" : ""}
+              onClick={() => setSelectedCategory("Accompagnement")}
+            >
+              Accompagnement
+            </button>
+            <button
     className={selectedCategory === 'Packs' ? 'active' : ''}
     onClick={() => setSelectedCategory('Packs')}
   >
     Packs
   </button>
-</div>
+          </div>
 
           <div className="menu-grid">
-  {filteredItems.map((item) => (
-    <div key={item.id} className={`menu-item ${!item.available ? "unavailable" : ""}`}>
-      <img
-        src={item.image || '/placeholder.svg'}
-        alt={item.name}
-        className="menu-item-image"
-        loading="lazy"
-      />
-      <h3>{item.name}</h3>
-      <p className="price">{item.price}F</p>
-      <div className="item-actions">
-        <button
-          className="favorite-button"
-          onClick={() => toggleFavorite(item.id)}
-        >
-          {favorites.includes(item.id) ? '❤️' : '🤍'}
-        </button>
-        <button className="add-to-cart" onClick={() => addToCart(item)} disabled={!item.available}>
-          {item.available ? 'Ajouter au panier' : 'Indisponible'}
-        </button>
-      </div>
-    </div>
-  ))}
-</div>
+            {/* <span></span> */}
+            {filteredItems.map((item) => (
+              <div
+                key={item.id}
+                className={`menu-item ${!item.available ? "unavailable" : ""}`}
+              >
+                {/* <div key={item.id} className={`menu-item ${!item.available ? 'unavailable' : ''}`}> */}
+                {!item.available && <span></span>}
+                <img
+                  src={item.image || "/placeholder.svg"}
+                  alt={item.name}
+                  className="menu-item-image"
+                  loading="lazy" // Lazy loading for better performance
+                />
+                <h3>{item.name}</h3>
+                <p className="price">{item.price}F</p>
+                <div className="item-actions">
+                  <button
+                    className="favorite-button"
+                    onClick={() => toggleFavorite(item.id)}
+                  >
+                    {favorites.includes(item.id) ? "❤️" : "🤍"}
+                  </button>
+                  <button
+                    className="add-to-cart"
+                    onClick={() => addToCart(item)}
+                    disabled={!item.available}
+                  >
+                    {item.available ? "Ajouter au panier" : "Indisponible"}
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="contact-info">

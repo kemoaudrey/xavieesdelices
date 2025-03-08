@@ -145,10 +145,19 @@ body {
 
 .category-filters {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: flex-start; /* Align buttons to the left */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 0.5rem;
   margin-bottom: 2rem;
+  padding: 0 1rem;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* Hide scrollbar for a cleaner look */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
 }
+.category-filters::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
 
 .category-filters button {
   padding: 0.5rem 1rem;
@@ -157,6 +166,9 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
 .category-filters button:hover {
@@ -541,6 +553,15 @@ button:focus, input:focus, a:focus {
   .quantity-controls button {
     padding: 0.5rem;
   }
+
+  .category-filters {
+    gap: 0.5rem; /* Further reduce gap for smaller screens */
+  }
+
+  .category-filters button {
+    padding: 0.5rem 0.8rem; /* Reduce padding for smaller buttons */
+    font-size: 0.8rem; /* Further reduce font size */
+  }
 }
 
 
@@ -556,13 +577,20 @@ button:focus, input:focus, a:focus {
     width: 100%;
     justify-content: flex-end;
   }
-}
-
-@media (max-width: 480px) {
   .menu-grid {
     gap: 1rem;
   }
+  .category-filters {
+    gap: 0.3rem; /* Minimal gap for very small screens */
+    justify-content: flex-start; /* Align buttons to the left */
+  }
+
+  .category-filters button {
+    padding: 0.4rem 0.7rem; /* Even smaller padding */
+    font-size: 0.75rem; /* Smaller font size */
+  }
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
