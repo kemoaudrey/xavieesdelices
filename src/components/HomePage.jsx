@@ -108,7 +108,7 @@ const menuItems = [
     price: 100,
     category: "Nems/Pastel/Samoussa",
     image: "assets/pastel.png",
-    available: false,
+    available: true,
   },
   {
     id: 14,
@@ -116,7 +116,7 @@ const menuItems = [
     price: 100,
     category: "Nems/Pastel/Samoussa",
     image: "assets/samoussa.png",
-    available: false,
+    available: true,
   },
 
   {
