@@ -105,7 +105,7 @@ const menuItems = [
   {
     id: 13,
     name: "Pastel",
-    price: 100,
+    price: 200,
     category: "Nems/Pastel/Samoussa",
     image: "assets/pastel.png",
     available: true,
