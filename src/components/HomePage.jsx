@@ -38,7 +38,7 @@ const menuItems = [
   {
     id: 5,
     name: "Crepes Viande Hachée",
-    price: 500,
+    price: 250,
     category: "Crepes",
     image: "assets/Crepesfarciesalaviandehachée.jpg",
     available: true,
@@ -105,7 +105,7 @@ const menuItems = [
   {
     id: 13,
     name: "Pastel",
-    price: 200,
+    price: 150,
     category: "Nems/Pastel/Samoussa",
     image: "assets/pastel.png",
     available: true,
