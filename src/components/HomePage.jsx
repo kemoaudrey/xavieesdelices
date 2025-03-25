@@ -38,7 +38,7 @@ const menuItems = [
   {
     id: 5,
     name: "Crepes Viande Hachée",
-    price: 250,
+    price: 500,
     category: "Crepes",
     image: "assets/Crepesfarciesalaviandehachée.jpg",
     available: true,
@@ -96,8 +96,8 @@ const menuItems = [
 
   {
     id: 12,
-    name: "pack 10 Nems",
-    price: 500,
+    name: "Nems",
+    price: 100,
     category: "Nems/Pastel/Samoussa",
     image: "assets/nems.png",
     available: true,
@@ -134,6 +134,14 @@ const menuItems = [
     price: 3500,
     category: "Packs",
     image: "assets/crepesviandehachefromages.jpg",
+    available: true,
+  },
+  {
+    id: 17,
+    name: "pack 12 Nems",
+    price: 1000,
+    category: "Packs",
+    image: "assets/pastel.png",
     available: true,
   },
   // { id: 17, name: 'Flan coco', price: 250, category: 'Flan', image: 'assets/flancoco.jpg', available: false },
