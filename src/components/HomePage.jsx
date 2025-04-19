@@ -144,6 +144,14 @@ const menuItems = [
     image: "assets/pastel.png",
     available: true,
   },
+  {
+    id: 17,
+    name: "pack 12 Samoussa",
+    price: 1000,
+    category: "Packs",
+    image: "Nems/Pastel/Samoussa",
+    available: true,
+  },
   // { id: 17, name: 'Flan coco', price: 250, category: 'Flan', image: 'assets/flancoco.jpg', available: false },
 
   // { id: 18, name: 'Yaourt nature', price: 100, category: 'Accompagnement', image: 'assets/yaourtnature.jpg', available: false },
