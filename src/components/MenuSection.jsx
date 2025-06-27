@@ -1,12 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Heart, Plus, Filter } from 'lucide-react';
+import { Search, Heart, Plus } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 
 const MenuSection = ({ menuItems, onAddToCart, favorites, onToggleFavorite }) => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
-  const [showFilters, setShowFilters] = useState(false);
 
   const { ref, inView } = useInView({
     triggerOnce: true,

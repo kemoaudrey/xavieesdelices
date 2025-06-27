@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import MenuSection from './MenuSection';
